@@ -1,0 +1,719 @@
+@charset "utf-8";
+html,
+body,
+ul,
+a,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+  margin: 0;
+  padding: 0;
+}
+img {
+  border: 0;
+  display: block;
+}
+a,
+u {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+em,
+i {
+  font-style: normal;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+#body {
+  width: 100%;
+  font-size: 12px;
+  background: #fff;
+}
+#head {
+  height: 32px;
+  font-size: 12px;
+  background: #f1f1f1;
+  text-align: center;
+  line-height: 32px;
+  width: 1308px;
+  margin: 0 auto ;
+}
+#head a {
+  color: #ec3e7d;
+  text-decoration: underline;
+}
+#head p {
+  float: left;
+  margin-left: 110px;
+}
+#head > ul {
+  float: right;
+  width: 700px;
+}
+#nav i {
+  margin-right: 6px;
+  color: #ec3d7c;
+  font-size: 14px;
+  font-weight: 800;
+}
+#nav > li {
+  float: left;
+}
+#nav > li:nth-child(1) {
+  width: 110px;
+  position: relative;
+}
+#nav > li:nth-child(1) ul {
+  position: absolute;
+  top: 32px;
+  left: 0px;
+  height: 140px;
+  width: 110px;
+  background: #fff;
+  display: none;
+}
+#nav > li:nth-child(1) ul li {
+  line-height: 20px;
+  color: #000;
+}
+#nav > li:nth-child(1) ul li a {
+  text-decoration: none;
+}
+#nav > li:nth-child(1):hover ul {
+  display: block;
+}
+#nav > li:nth-child(1):hover ul li:hover {
+  color: red;
+}
+#nav > li:nth-child(1):hover {
+  background: #fff;
+}
+#nav > li:nth-child(2) {
+  width: 90px;
+}
+#nav > li:nth-child(3) {
+  width: 102px;
+}
+#nav > li:nth-child(4) {
+  width: 82px;
+}
+#nav > li:nth-child(5) {
+  width: 86px;
+}
+#nav > li:nth-child(6) {
+  width: 100px;
+}
+#head ul li ul {
+  display: none;
+}
+/*logo区域*/
+#logo {
+  width: 1200px;
+  margin: 0 auto ;
+  height: 95px;
+  border-top: 1px solid #ccc;
+  background: #fff;
+}
+#logo > a {
+  display: block;
+  margin-left: 110px;
+  margin-top: 22px;
+  float: left;
+}
+.search {
+  height: 58px;
+  width: 440px;
+  margin-left: 218px;
+  margin-top: 22px;
+  float: left;
+}
+.search span {
+  height: 36px;
+  width: 92px;
+  display: inline-block;
+  text-align: center;
+  line-height: 36px;
+  background: #ec3e7d;
+  position: relative;
+  top: 1px;
+  color: #fff;
+}
+.search input {
+  height: 32px;
+  width: 344px;
+  border: 2px solid #ec3e7d;
+}
+.search ul li {
+  float: left;
+  padding-right: 8px;
+  padding-left: 8px;
+  border-right: 1px solid #ccc;
+  color: #ccc;
+}
+.search ul li:last-child {
+  border: none;
+}
+#logo .gwc {
+  height: 32px;
+  width: 130px;
+  float: right;
+  margin-right: 110px;
+  margin-top: 20px;
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  line-height: 32px;
+  text-align: center;
+}
+.gwc span {
+  display: block;
+  float: left;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  text-align: center;
+  background: #fff;
+  color: #ec3d7c;
+}
+#show {
+  width: 1200px;
+  height: 36px;
+  margin: 0 auto;
+  background: #fff;
+}
+#show .show-left {
+  float: left;
+  width: 190px;
+  height: 36px;
+  background: #000;
+  color: #fff;
+  text-align: left;
+  line-height: 36px;
+  font-size: 16px;
+}
+#show .show-left i {
+  display: inline-block;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#show .show-right {
+  width: 1010px;
+  height: 36px;
+  line-height: 36px;
+}
+#show .out1 li {
+  height: 36px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 36px;
+  margin: 0px 18px 0;
+  float: left;
+  cursor: pointer;
+  position: relative;
+}
+#show .out1 li:hover {
+  color: #EC3E81;
+}
+#show .out1 li span {
+  margin-left: 20px;
+}
+.show-left .show-list {
+  color: #000000;
+  width: 190px;
+}
+.show-left .show-list li {
+  height: 52px;
+  line-height: 52px;
+  border-bottom: 1px dashed #ccc;
+  background-color: #fa3778;
+  color: #fff;
+  position: relative;
+  z-index: 1333;
+}
+.show-left .show-list img {
+  position: absolute;
+  top: 20px;
+  left: 160px;
+}
+.show-left .show-list ul {
+  color: #000;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 190px;
+  width: 300px;
+  border: 1px solid #FF1493;
+  background: #fff;
+}
+.hide {
+  display: none;
+  ul{
+      font-size:12px;
+  }
+}
+.show-left:hover .hide {
+  display: block;
+}
+.show-left .show-list li:hover ul {
+  display: block;
+}
+
+//轻松购物
+.shopping{
+    width:100%;
+    height: 240px;
+    h2{
+        font-size: 30px;
+        color:#ec3e7d;
+        margin:65px 0 27px 34%;
+    }
+    div{
+        width:620px;
+        height:80px;
+        margin: 0 auto;
+       dl{
+          float:left;
+          margin-left:56px;
+          dd{
+          	font-size:12px;
+          	margin-top:8px;
+          	text-align: center;
+          	color:#999;
+          }
+       }
+    }
+}
+.wh(@w,@h){
+    width:@w;
+    min-height:@h;
+}
+.txt(@a){
+    text-align: center;
+    line-height: @a;
+}
+#bodys{
+    .wh(100%,600px);
+    padding-top:30px;
+    padding-bottom:30px;
+    
+    background: #F5F5F5;
+    .bodys{
+        width:1100px;
+        min-height:500px;
+        margin:10px auto;
+        .fangsi{
+            overflow: hidden;
+            float:left;
+            .wh(255px,388px);
+            li:first-child{
+                background: #fff;
+                border-left:4px solid #c69a62;
+                padding-left: 10px;
+                border-bottom: none;
+            }
+            li{
+                height:50px;
+                line-height: 50px;
+                padding-left: 40px;
+                border-bottom:1px dashed #ccc;
+                background: #e8e6e7;
+                span{
+                    margin-left: 10px;
+                    font-size: 12px;
+                }
+            }
+        }
+        .fukuan{
+            float: right;
+            width:710px;
+            min-height:800px;
+            background: #fff;
+            padding:55px 50px;
+            font-size:12px;
+            h5{
+                padding-bottom: 32px;
+                border-bottom:1px solid #F2F2F1;
+                font-size:14px;
+            }
+            .hp{
+                margin:32px 0px 80px 0;
+                font-size:12px;
+            }
+            .zfb,.wx,.yl,.cft,.yfzp{
+                border-bottom:1px solid  #F2F2F1;
+                img{
+                    margin:40px 20px;
+                }
+                p{
+                    margin-left:20px;
+                }
+                span{
+                    display: inline-block;
+                    margin:30px 20px;
+                }
+            }
+        }
+        .liucheng{
+            float: right;
+            width:710px;
+            min-height:800px;
+            background: #fff;
+            padding:55px 50px;
+            font-size:12px;
+            h5{
+                padding-bottom: 32px;
+                border-bottom:1px solid #F2F2F1;
+                font-size:14px;
+            }
+            img{
+                margin:40px 0;
+            }
+            h6{
+                margin: 40px 0;
+            }
+            a{
+                text-decoration: underline;
+                color:#999;
+            }
+            ol{
+                margin:40px 0;
+                list-style: circle;
+            }
+        }
+    }
+}
+
+
+#BOT {
+  width: 1263px;
+  background: #fff;
+  margin: 0 auto;
+}
+#BaoY {
+  height: 126px;
+  width: 1200px;
+  margin: 10px auto 0;
+  background: #fff;
+}
+#BaoY > div {
+  width: 210px;
+  height: 126px;
+  float: left;
+  margin-right: 30px ;
+}
+#BaoY > div i {
+  float: left;
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-top: 46px;
+  color: deeppink;
+}
+#BaoY > div i + div {
+  float: left;
+  margin-top: 40px;
+  margin-left: 8px;
+}
+#BaoY .kdi i {
+  font-size: 24px;
+}
+/*bottom*/
+#bottom {
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+  background: #fff;
+  font-size: 12px;
+}
+#bottom .bol {
+  width: 900px;
+  height: 210px;
+  background: #fff;
+  float: left;
+}
+#bottom .bol ul {
+  float: left;
+  margin: 30px 88px 0 30px;
+}
+#bottom .bol ul li {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+#bottom .bol ul li:first-child {
+  font-weight: 900;
+  color: #000;
+}
+#bottom .wbx {
+  width: 300px;
+  height: 180px;
+  background: #fff;
+  float: right;
+}
+#bottom .wbx dl {
+  float: left;
+  margin: 10px;
+  text-align: center;
+}
+#bottom .wbx img {
+  height: 128px;
+  width: 128px;
+}
+/*footer*/
+footer {
+  width: 1263px;
+  height: 102px;
+  background: #000;
+}
+#foot {
+  height: 102px;
+  width: 1200px;
+  background: #000;
+  margin: 0 auto;
+  color: #fff;
+}
+footer ul li {
+  float: left;
+  margin: 20px 10px;
+  height: 12px;
+  border-right: 1px solid #fff;
+  padding-right: 12px;
+  text-align: center;
+  line-height: 12px;
+}
+footer ul li:last-child {
+  border: none;
+}
+footer p {
+  margin-left: 10px;
+}
+/*侧边栏*/
+#cebian {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  background: #4c4c4c ;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  z-index: 100;
+}
+#cebian div:first-child {
+  height: 23%;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+#cebian div:first-child > a {
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
+#cebian div:first-child div {
+  position: absolute;
+  bottom: 20px;
+  left: -140px;
+  background-color: #4c4c4c;
+  text-align: center;
+  line-height: 20px;
+  width: 100px;
+  display: none;
+}
+#cebian div:first-child > div > a {
+  color: #fff;
+  display: block;
+  padding: 5px 10px;
+}
+#cebian div:first-child > a:hover {
+  background: pink;
+}
+#cebian div:nth-child(2) {
+  height: 18%;
+  width: 40px;
+  border-bottom: 1px solid #ccc;
+}
+#cebian .gwc > a {
+  width: 20PX;
+  height: 80%;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  color: #fff;
+  font-size: 12px;
+}
+#cebian .gwc > section {
+  height: 100%;
+  width: 200px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  display: none;
+}
+#cebian .gwc > section p {
+  float: left;
+  padding: 4px;
+  color: #000;
+}
+#cebian .gwc > section span {
+  float: right;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 20px;
+  color: #000;
+}
+/*我的收藏*/
+#cebian .sc {
+  height: 8%;
+  text-align: center;
+  position: relative;
+}
+#cebian .sc > a .iconfont {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 8px;
+  margin-left: 2px;
+  color: #fff;
+}
+#cebian .sc div {
+  position: absolute;
+  top: 0;
+  left: -140px;
+  background-color: #4c4c4c;
+  text-align: center;
+  line-height: 30px;
+  width: 100px;
+  height: 30px;
+  display: none;
+}
+#cebian .sc > a .iconfont:hover {
+  background: pink;
+}
+#cebian .sc div a {
+  color: #fff;
+}
+/*历史记录*/
+#cebian .hs {
+  height: 8%;
+  text-align: center;
+  position: relative;
+}
+#cebian .hs > a .iconfont {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 8px;
+  margin-left: 2px;
+  color: #fff;
+}
+#cebian .hs div {
+  position: absolute;
+  top: 0;
+  left: -140px;
+  background-color: #4c4c4c;
+  text-align: center;
+  line-height: 30px;
+  width: 100px;
+  height: 30px;
+  display: none;
+}
+#cebian .hs > a .iconfont:hover {
+  background: pink;
+}
+#cebian .hs div a {
+  color: #fff;
+}
+/*线上客服*/
+#cebian .kefu {
+  height: 8%;
+  text-align: center;
+  position: relative;
+  margin-top: 140px;
+}
+#cebian .kefu > a .iconfont {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 8px;
+  margin-left: 2px;
+  color: #fff;
+}
+#cebian .kefu div {
+  position: absolute;
+  top: 0;
+  left: -140px;
+  background-color: #4c4c4c;
+  text-align: center;
+  line-height: 30px;
+  width: 100px;
+  display: none;
+  height: 30px;
+}
+#cebian .kefu div a {
+  color: #fff;
+}
+#cebian .kefu > a .iconfont:hover {
+  background: pink;
+}
+#cebian .wx {
+  height: 8%;
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+}
+#cebian .wx > a .iconfont {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 8px;
+  margin-left: 2px;
+  color: #fff;
+}
+#cebian .wx div {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -60px;
+  left: -140px;
+  display: none;
+}
+#cebian .wx > a .iconfont:hover {
+  background: pink;
+}
+#cebian .wx div img {
+  height: 100%;
+  left: 100%;
+}

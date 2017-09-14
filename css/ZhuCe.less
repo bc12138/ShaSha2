@@ -1,0 +1,299 @@
+@charset "utf-8";
+html,body,ul,a,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input{margin:0;padding:0}
+img{border:0;display:block;}
+a,u{text-decoration:none;}
+ul,ol,li{list-style:none;}
+em,i{font-style:normal;}
+.clearfix:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility: hidden;}
+#body{
+	width:100%;
+	font-size:12px;
+	background: #ffff;
+}
+#head{
+	height:32px;
+	font-size:12px;
+	background: #bfbfbf;
+	text-align: center;
+	line-height: 32px;
+	width:1308px;
+	margin:0 auto ;
+}
+#head a{
+	color:#ec3e7d;
+	text-decoration:underline;
+}
+#head p{
+	float:left;
+	margin-left:110px;
+}
+#head>ul{
+	float:right;
+	width:700px;
+}
+#nav i{
+	margin-right: 6px;
+	color:#ec3d7c;
+	font-size: 14px;
+	font-weight: 800;
+}
+#nav>li{
+	float:left;
+}
+
+#nav>li:nth-child(1){
+	width:110px;
+	position:relative;
+}
+#nav > li:nth-child(1) ul{
+  position: absolute;
+  top:32px;
+  left:0px;
+  height:140px;
+  width: 110px;
+  background: #fff;
+  display:none;
+}
+#nav > li:nth-child(1) ul li{
+  line-height: 20px;
+  color:#000;
+  a{
+    text-decoration:none;
+  }
+}
+#nav > li:nth-child(1):hover ul {
+  display: block;
+  li:hover{
+      color:red;
+  }
+}
+#nav > li:nth-child(1):hover{
+	background:#fff;
+}
+#nav>li:nth-child(2){
+	width:90px;
+}
+#nav>li:nth-child(3){
+	width:102px;
+}
+#nav>li:nth-child(4){
+	width:82px;
+}
+#nav>li:nth-child(5){
+	width:86px;
+}
+#nav>li:nth-child(6){
+    width:86px;
+}
+//logo
+#logo{
+    height:75px;
+    width:1090px;
+    margin:0 auto;
+    background: #fff;
+    padding-top:20px;
+}
+/*注册区*/
+#zhuce{
+    height:558px;
+    width:1090px;
+    margin: 40px auto 0;
+    background:url(https://cdnec.sasa.com/public/images/87/8f/71/cecc204b4820bd74bf72910e6ba440fae2b83342.jpg?1487821734#w) no-repeat 0px 100px;
+    div{
+        height:548px;
+        width:420px;
+        float:right;
+        padding:30px;
+        margin-right: 10px;
+        border:1px solid #ccc;
+        box-shadow:2px 2px 2px #ccc;
+        section{
+            color:#5a5d6c;
+            font-size: 20px;
+            margin-bottom: 40px;
+            li{
+                margin-right: 70px;
+                color:#5a5d6c;
+                float:right;
+                font-size:12px;
+                margin-top: 10px;
+                a{
+                    color:red;
+                    cursor:pointer;
+                }
+            }
+        }
+    }
+}
+#zhuce p,{
+    height:80px;
+    box-sizing: border-box;
+    .txt{
+        width:350px;
+        height:36px;
+    }
+    .yz{
+        height:36px;
+        width:128px;
+        float:left;
+    }
+    .yzs{
+        height:40px;
+        width:81px;
+        float:left;
+        display:inline-block;
+        background: #f3fbfe;
+        position: relative;
+        top:0px;
+        font-size:22px;
+        text-align: center;
+        line-height: 40px;
+    }
+    a{
+        color:#ccc;
+        float: left;
+        margin-top:13px ;
+    }
+}
+.zc{
+    position: relative;
+}
+#btn{
+    height:40px;
+    width:350px;
+    margin:0 auto;
+    background: #ec3e7d;
+    position: absolute;
+    bottom:20px;
+    left:70px;
+}
+//登录区
+#dengLu{
+    height:558px;
+    width:1090px;
+    margin: 40px auto 0;
+    background:url(https://cdnec.sasa.com/public/images/e0/63/82/27fc85e036219ba5f0cac20ddad979b866b441e8.png?1462239426#w) no-repeat 0px 100px;
+    .dl{
+        height:488px;
+        width:360px;
+        float:right;
+        padding:30px;
+        position: relative;
+        margin-right: 68px;
+        border:1px solid #ccc;
+        box-shadow:1px 1px 10px #ccc;
+        section{
+            color:#5a5d6c;
+            font-size: 20px;
+            margin-bottom: 40px;
+            li{
+                margin-right: 70px;
+                color:#5a5d6c;
+                float:right;
+                font-size:12px;
+                margin-top: 10px;
+                a{
+                    color:red;
+                    cursor:pointer;
+                }
+            }
+        }
+    }
+}
+
+#dengLu .txt {
+    border:none;
+    outline:none;//去掉点击时候的边框
+} 
+#dengLu .bor{
+    width:352px;
+    height:36px;
+    border:1px solid #bdc0c0;
+}
+#dengLu p{
+    color:#bdc0c0;
+    text-align: left;
+    height:36px;
+    line-height: 36px;
+    margin-bottom: 30px;
+    i{
+        font-size:20px;
+    }
+}
+//验证框
+#dengLu .yzp{
+    height:38px;
+    width:130px;
+    border:1px solid #bdc0c0;
+    position: relative;
+}
+#dengLu .yzDiv{
+    position: absolute;
+    top:233px;
+    left:163px;
+    height:38px;
+    text-align: center;
+        line-height: 38px;
+    span{
+        display: inline-block;
+        height:38px;
+        width:80px;
+        font-size: 18px;
+        background: #f3fbff;
+        
+    }
+    a{
+      position: absolute;
+      top:px;
+      display: inline-block;
+      height:38px;
+      color:#ccc;
+      width:120px;
+    }
+}
+#dengLu .yz{
+   outline:none;
+   border:none;
+   width:120px;
+}
+#dengLu .cookie a{
+    margin-left: 30px;
+}
+#dengLu .cookie{
+    margin-bottom: 30px;
+}
+#dengLu .btn{
+    display: block;
+    width:350px;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    color:#fff;
+    background: #ed3e7c;
+    outline:none;
+    margin:0 auto;
+}
+.san{
+    margin-top: 40px;
+    width:360px;
+    height:60px;
+    ul li{
+        float:left;
+       
+        a{
+            margin-top: 20px;
+            display: block; width:106px;margin-right:6px;
+             img{
+                display: inline-block;
+    
+            }
+            span{
+               display: inline-block;
+               position: relative;
+               top:-12px;
+               left:8px;
+               color:#4C4C4C;
+            }
+        }
+    }
+}
