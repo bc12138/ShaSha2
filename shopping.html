@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/shopping.css" />
+		<link rel="stylesheet" href="iconfont/iconfont.css" />
+		<link rel="stylesheet" href="iconfont1/iconfont.css" />
+
+		<link rel="stylesheet" href="iconfont2/iconfont.css" />
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://apps.bdimg.com/libs/jquery.cookie/1.4.1/jquery.cookie.js"></script>
+	</head>
+	<body>
+		<div id="body">
+			<!--头部-->
+			<header id="head">
+				<p><span class="dengl">欢迎光临莎莎网！</span>
+					<a href="ZhuCe.html">注册</a> 或
+					<a href="DengLu.html">登录</a>
+				</p>
+				<ul id="nav" class="clearfix">
+					<li><i class="iconfont icon-wodezhanghu"></i>我的账户
+						<ul>
+							<li>
+								<a href="javascript:;">我的订单</a>
+							</li>
+							<li>
+								<a href="javascript:;">我的积分</a>
+							</li>
+							<li>
+								<a href="javascript:;">我的优惠劵</a>
+							</li>
+							<li>
+								<a href="javascript:;">我的收藏</a>
+							</li>
+							<li>
+								<a href="javascript:;">我的评价</a>
+							</li>
+						</ul>
+
+					</li>
+					<li><i class="iconfont icon-gouwuche"></i>我的购物车</li>
+					<li><i class="iconfont icon-shoucang"></i>我的收藏</li>
+					<li>我的站内信</li>
+					<li>积分中心</li>
+					<li>Global site</li>
+					<li>关注我们</li>
+				</ul>
+			</header>
+			
+
+			
+			<!--logo区域-->
+			<div id="logo" class="clearfix">
+				<!--logo-->
+				<a href="">
+					<img src="https://www.sasa.com/public/images/81/a8/e0/0e937ac6e954f773488d653491492d57f5cb95b8.png?1474361298#w" alt="欢迎光临莎莎网" />
+				</a>
+				<div class="dingdan">
+
+				</div>
+				<div class="logo-r">
+
+				</div>
+			</div>
+			<!--空空如野的购物车-->
+		
+		</div>
+
+		<!--商品区  没有商品的时候 显示购物车空空如野的div  如果cookie里面有商品   空空如野的div就隐藏 显示商品-->
+		<div class="body">
+			<div class="noneDiv">
+				<h5>亲，您的购物车中没有商品。</h5>
+				<h2>赶紧挑选心爱的商品吧！</h2>
+				<div class="search clearfix">
+					<p><input type="text" /><span>点击</span></p>
+					<ul class="clearfix">
+						<li><a href="javascript:;">兰蔻</a></li>
+						<li><a href="javascript:;">滋润</a></li>
+						<li><a href="javascript:;">小样</a></li>
+						<li><a href="javascript:;">保湿</a></li>
+						<li><a href="javascript:;">肌肤之遥</a></li>
+						<li><a href="javascript:;">面膜</a></li>
+						<li><a href="javascript:;">迪奥</a></li>
+					</ul>					
+				</div>	
+				<a href="index.html" class="one">返回首页</a>
+				
+			</div>
+			
+				<!--显示商品-->
+			<div id="shop">
+				<p class="p1">保税仓直送商品结帐提示 1. 保税仓直送商品不可与香港直送商品同时结帐; 2. 保税仓直送商品每张订单总金额不可超过 ¥2000。</p>
+				<h2>您购物车中的商品<span>Your Shopping Cart</span></h2>
+				<p class="p2">香港直送商品订单满<span>¥530</span>包邮，订单满<span>¥265</span>减运费<span>¥45</span>；未满<span>¥265</span>运费<span>¥90</span></p>
+				<div>
+					<table>
+						<tr class="first">
+							<th class="th-f"><input type="checkbox" name="qx"/>香港直送</th>
+							<th>商品名称</th>
+							<th>单价</th>
+							<th>数量</th>
+							<th>小计</th>
+						</tr>	
+						<!--<tr>
+							<td class="clearfix"><input type="checkbox" class="che" /><img src="img/001.png" alt="" /></td>
+							<td>美宝莲 12粉嫩裸色眼影盘</td>
+							<td>￥74.7</td>
+							<td class="numTd">
+								<a href="javascript:;" class='jian'>-</a>
+								<input class="txt1" type="text" value="1"/>
+								<a href="javascript:;" class="jia">+</a>
+							</td>
+							<td >￥74.7</td>
+							<td><a href="">删除</a></td>
+						</tr>-->
+					</table>
+					<div class='youhui'>
+						<span class="s1">已优惠的项目</span><span class="s2">优惠项目</span>
+					</div>
+					<div class='zongji'>
+						<p class="p1"><a href="index.html">继续购物</a><a href="javascript:;" class="removeGwc">清空购物车</a></p><p class="p2"><span>共计<em class="shopNum">0</em>件商品</span><span>总计￥<em style="color:#FF0000;" class="shopZ">0.00</em><a href="zhifu.html">结账</a></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		
+	
+		<div id="BOT">
+			<div id="BaoY">
+				<div>
+					<i class="iconfont icon-listfeiji"></i>
+					<div>
+						<h3>蛮168免邮</h3>
+						<p>适用于保税仓商品</p>
+					</div>
+					
+				</div>
+				<div>
+					<i class="iconfont icon-zheng"></i>
+					<div>
+						<h3>正品保证</h3>
+						<p>专注美妆护肤39年</p>
+					</div>
+					
+				</div>
+				<div class="kdi">
+					<i class="iconfont icon-icon_kuaidi"></i>
+					<div>
+						<h3>香港直邮</h3>
+						<p>香港直发 美丽到家</p>
+					</div>
+					
+				</div>
+				<div>
+					<i class="iconfont icon-30tian"></i>
+					<div>
+						<h3>30天退换保证</h3>
+						<p>为您提供售后无忧保障</p>
+					</div>
+					
+				</div>
+				<div>
+					<i class="iconfont icon-kefu"></i>
+					<div>
+						<h3>香港上市</h3>
+						<p>股票代码：HK00178</p>
+					</div>
+					
+				</div>
+			</div>
+		
+			<div id="bottom">
+				<div class="bol">
+					<ul>
+						<li>新手上路</li>
+						<li>购物流程</li>
+						<li>优惠劵说明</li>
+						<li>常见问题</li>
+						<li>联络我们</li>
+						<li>购物流程</li>
+						<li>常见问题</li>
+					</ul>
+					<ul>
+						<li>付款方式</li>
+						<li>在线支付</li>
+						<li>积分支付</li>
+					</ul>
+					<ul>
+						<li>配送方式</li>
+						<li>配送说明</li>
+						<li>追踪订单</li>
+					</ul>
+					<ul>
+						<li>售后服务</li>
+						<li>正品保证</li>
+						<li>价格承诺</li>
+						<li>30天退换保证</li>
+						<li>退款程序</li>
+						<li>更改订单</li>
+					</ul>
+					<ul>
+						<li>莎莎会员</li>
+						<li>积分奖赏</li>
+						<li>VIP会员计划</li>
+					</ul>
+				</div>
+				
+				<div class="wbx">
+					<dl>
+						<dt><img src="img/wb.jpg" alt="微博" /></dt>
+						<dd>莎莎官方微博</dd>
+						<dd>@莎莎网</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/wx.jpg" alt="微博" /></dt>
+						<dd>莎莎官方微信</dd>
+						<dd>ID:hksasadotcom</dd>
+					</dl>
+				</div>
+				<img src="img/b1.jpg" alt="" />
+			</div>
+		</div>
+			
+		<!--脚部 -->
+		<footer>
+			<div id="foot">
+				<ul class="clearfix">
+					<li>关于莎莎</li>
+					<li>使用条款</li>
+					<li>隐私策略</li>
+					<li>批发服务</li>
+					<li>招商合作</li>
+					<li>帮助中心</li>
+					<li>港澳店铺推广</li>
+					<li>人才招聘</li>
+					<li>联络我们</li>
+					<li>其他送货地区</li>
+				</ul>
+				<p>Copyright 2000-2016 Sa Sa dot Com Limited 版权所有莎莎国际控股有限公司成员</p>
+			</div>
+			
+		</footer>
+	
+	
+	<!--//侧边栏  -->
+	<div id="cebian">
+		<!-- 个人中心 -->
+		<div class="ge">
+			<a href="" class="iconfont icon-wodezhanghu"></a>
+			<div><a href=""><span>个人中心</span></a></div>
+		</div>
+		<!-- 购物车路径 -->
+		<div class="gwc">
+			<a href="javascript:;"><i class="iconfont icon-gouwuche"></i>我的购物车</a>
+			<section>
+				<div>
+					<p>我的购物车</p>
+				</div>
+				<div>
+					
+				</div>
+			</section>
+		</div>
+			<!--购物车事件-->
+			<script>
+				$(function(){
+					$(".gwc").click(function(){
+						$(".gwc section").toggle();						
+					})
+				
+					$(".gwc section").mouseout(function(){
+						$(".gwc section").hide();
+					})
+				})
+				
+			</script>
+		<div class="sc">
+			<a href=""><i class="iconfont icon-shoucang"></i></a>
+			<div>
+				<li><a href="">我的账户</a></li>
+			</div>
+		</div>
+		
+		<div class="hs">
+			<a href=""><i class="iconfont icon-history"></i></a>
+			<div>
+				<li><a href="">历史记录</a></li>
+			</div>
+		</div>
+		
+		<div class="kefu">
+			<a href=""><i class="iconfont icon-kefu"></i></a>
+			<div>
+				<li><a href="">线上客服</a></li>
+			</div>
+		</div>
+
+		<div class="wx">
+			<a href=""><i class="iconfont icon-erweima"></i></a>
+			<div>
+				<img src="img/wx.jpg" alt="">
+			</div>
+			
+		</div>
+	</div>
+	<div>
+		<img src="" alt="" />
+	</div>
+	<script src="js/shopping.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/jquery.cookie/1.4.1/jquery.cookie.js"></script>
+	<link rel="stylesheet" href="css/ZhuCe.css">
+	<link rel="stylesheet" href="iconfont3/iconfont.css" />
+</head>
+<body>
+	<div id="body">
+			<!--头部-->
+			<header id="head">
+				<p><span>欢迎光临莎莎网！</span>　　<a href="ZhuCe.html">注册</a> 或 <a href="DengLu.html">登录</a></p>
+				<ul id="nav" class="clearfix">
+					<li><i class="iconfont icon-wodezhanghu"></i>我的账户
+						<ul>
+							<li><a href="javascript:;">我的订单</a></li>
+							<li><a href="javascript:;">我的积分</a></li>
+							<li><a href="javascript:;">我的优惠劵</a></li>
+							<li><a href="javascript:;">我的收藏</a></li>
+							<li><a href="javascript:;">我的评价</a></li>
+						</ul>
+						
+					</li>
+					<li><i class="iconfont icon-gouwuche"></i>我的购物车</li>
+					<li><i class="iconfont icon-shoucang"></i>我的收藏</li>
+					<li>我的站内信</li>
+					<li>积分中心</li>
+					<li>Global site</li>
+					<li>关注我们</li>
+				</ul>
+			</header>
+			
+			<!--logo区域-->
+			<div id="logo" class="clearfix">
+				<!--logo-->
+				<a href="">
+					<img src="https://www.sasa.com/public/images/81/a8/e0/0e937ac6e954f773488d653491492d57f5cb95b8.png?1474361298#w" alt="欢迎光临莎莎网" />
+				</a>
+			</div>
+			<div id="dengLu">
+				<div class="dl">
+					<section>
+						用户登录
+						<li>还没有莎莎网账号？<a href="ZhuCe.html">立即注册</a></li>						
+					</section>
+					<p class="bor inp"><i class="iconfont icon-personalinfo"></i><input type="text" class="txt"  placeholder="邮箱/手机" /></p>
+					<p class="bor inp"><i class="iconfont icon-suo"></i><input type="password" class="txt pass"  placeholder="填写密码" /></p>
+					<p class="inp yzp"><input type="text" name="yz" class="yz inp1" placeholder="填写图片验证码" /></p><div class="yzDiv"><span class="yzs"></span><a href="javascript:;">看不清？换一张</a></div>
+					<p class="cookie"><input type="checkbox" />记住我<a href="" style="color:#ed3e7c">忘记密码</a></p>
+					<a href="javascript:;" class="btn">登录</a>
+					<div class="san">
+						<h3>第三方登录</h3>
+						<ul>
+							<li><a href=""><img src="img/qq.png" alt="" /><span>QQ登录</span></a></li>
+							<li><a href=""><img src="img/xl.png" alt="" /><span>新浪登录</span></a></li>
+							<li><a href=""><img src="img/zfb.png" alt="" /><span>支付宝登录</span></a></li>						
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+	</div>
+</body>
+</html>
+<script>
+	$.cookie("zhangsan","lisi");
+		$(".inp").mouseover(function(){
+		$(this).css({
+			'outline':'none',
+			'border':'1px solid red',
+			'box-shadow':"1px 1px 10px red"
+		})
+		
+	}).mouseout(function(){
+		$(this).css({
+			'border':'1px solid black',
+			'box-shadow':"0px 0px 0px #000"
+		})
+	})
+	
+		
+		$(".btn").click(function(){//注册按钮点击的时候，进行验证
+			$.ajax({
+				type:"post",
+				url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+				data:{
+					"status":"login",
+					"userID":$(".inp .txt" ).val(),
+					"password":$(".inp .pass" ).val()
+				},
+				success:function(res){
+					switch( res ){
+						case "0" : alert("用户名不存在");break;
+						case "2" : alert("用户密码不符合");break;
+						default : location.href = "index.html?id="+ $(":input[class=txt]").val();
+					}
+					if( $(":input[type=checkbox]").prop("checked") ){//如果复选框是点击状态 就存cookie
+					$.cookie("name", $(".inp .txt" ).val() );
+					$.cookie("pass", $(".inp .pass" ).val() );
+			}
+				}
+			})
+		
+		
+		})
+		//页面加载的时候查看有没有cookie（账号密码）
+	
+		var name = $.cookie("name");
+		var pass = $.cookie("pass");
+		if(name){
+			$(".inp .txt" ).val(name);
+			$(".inp .pass" ).val(pass);
+			$(":input[type=checkbox]").attr("checked","checked");
+		}
+		
+		
+		function ran(min,max){
+			return Math.floor(Math.random()*(max - min + 1) + min);
+		}
+		ranTxt()
+		
+		function ranTxt(){
+		var str = "0123456789QWERTYUIOPLKJHGFDSAZXCVBNMqwertyuioplkjhgfdsazxcvbnm";
+		var txt = "";
+		for(var i = 0; i < 4; i++){
+			txt += str[ran(0,str.length - 1)];
+		}
+		$(".yzDiv").find("span").html(txt);
+	}
+	
+	$(".yzDiv a").click(function(){
+		ranTxt();
+	})
+</script>
